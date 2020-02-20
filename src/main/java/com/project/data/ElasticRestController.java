@@ -51,7 +51,7 @@ public class ElasticRestController {
 				if (Language.RUSSIAN != Language.getByCode(languageCode)) {
 					urlBuilder.append("/").append(languageCode.toLowerCase());
 				}
-				urlBuilder.append("/").append(localisation.get().getSlug());
+				urlBuilder.append("/places/").append(localisation.get().getSlug());
 				item.setUrl(urlBuilder.toString());  
 				items.add(item);
 			}
