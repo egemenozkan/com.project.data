@@ -18,12 +18,9 @@ public class Suggestion {
 	@Id
 	private String id;
 	private long productId;
-	private String label;
-	private String slug;
 	private ProductType productType;
 	private PlaceType placeType;
 	private EventType eventType;
-	private Language language;
 	private List<String> keywords;
 	@Field(type = FieldType.Nested, includeInParent = true)
 	private List<Localisation> localisations;
@@ -42,22 +39,6 @@ public class Suggestion {
 
 	public void setProductId(long productId) {
 		this.productId = productId;
-	}
-
-	public String getLabel() {
-		return label;
-	}
-
-	public void setLabel(String label) {
-		this.label = label;
-	}
-
-	public String getSlug() {
-		return slug;
-	}
-
-	public void setSlug(String slug) {
-		this.slug = slug;
 	}
 
 	public ProductType getProductType() {
@@ -82,14 +63,6 @@ public class Suggestion {
 
 	public void setEventType(EventType eventType) {
 		this.eventType = eventType;
-	}
-
-	public Language getLanguage() {
-		return language;
-	}
-
-	public void setLanguage(Language language) {
-		this.language = language;
 	}
 
 	public List<String> getKeywords() {
