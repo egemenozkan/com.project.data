@@ -59,4 +59,9 @@ public class ElasticRestController {
 		return items;
 	}
 	
+	@GetMapping("/autocomplete/put")
+	public String putToElasticSeach() {
+		autocompleteService.putPlacesToElasticSearch();
+		return null;
+	}
 }
