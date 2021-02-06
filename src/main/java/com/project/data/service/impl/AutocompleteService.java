@@ -7,10 +7,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
-import com.project.api.data.enums.Language;
 import com.project.api.data.enums.ProductType;
 import com.project.api.data.model.place.Localisation;
 import com.project.api.data.model.place.Place;
+import com.project.common.enums.Language;
 import com.project.data.elastic.entity.Suggestion;
 import com.project.data.elastic.repository.AutocompleteRepository;
 import com.project.data.mybatis.mapper.PlaceMapper;

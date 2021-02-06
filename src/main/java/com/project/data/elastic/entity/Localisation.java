@@ -1,6 +1,6 @@
 package com.project.data.elastic.entity;
 
-import com.project.api.data.enums.Language;
+import com.project.common.enums.Language;
 
 public class Localisation {
 	

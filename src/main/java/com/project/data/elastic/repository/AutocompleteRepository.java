@@ -5,7 +5,6 @@ import java.util.List;
 
 import org.springframework.data.elasticsearch.repository.ElasticsearchRepository;
 
-import com.project.api.data.enums.Language;
 import com.project.data.elastic.entity.Suggestion;
 
 public interface AutocompleteRepository extends ElasticsearchRepository<Suggestion, String> {

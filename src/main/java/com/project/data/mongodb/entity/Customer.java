@@ -2,7 +2,7 @@ package com.project.data.mongodb.entity;
 
 import org.springframework.data.annotation.Id;
 
-import com.project.api.data.enums.Gender;
+import com.project.common.enums.Gender;
 
 public class Customer {
 

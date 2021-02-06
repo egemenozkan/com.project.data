@@ -7,13 +7,12 @@ import org.springframework.data.elasticsearch.annotations.Document;
 import org.springframework.data.elasticsearch.annotations.Field;
 import org.springframework.data.elasticsearch.annotations.FieldType;
 
-import com.project.api.data.enums.Language;
 import com.project.api.data.enums.PlaceType;
 import com.project.api.data.enums.ProductType;
 import com.project.api.data.model.event.EventType;
 import com.project.api.data.model.place.Localisation;
 
-@Document(indexName = "web", type = "suggestions")
+@Document(indexName = "web")
 public class Suggestion {
 	@Id
 	private String id;

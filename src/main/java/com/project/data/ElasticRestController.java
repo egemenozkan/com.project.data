@@ -12,10 +12,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.project.api.data.enums.Language;
 import com.project.api.data.enums.ProductType;
 import com.project.api.data.model.autocomplete.Item;
 import com.project.api.data.model.place.Localisation;
+import com.project.common.enums.Language;
 import com.project.data.elastic.entity.Suggestion;
 import com.project.data.service.IAutocompleteService;
 

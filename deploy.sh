@@ -1,5 +1,5 @@
-mvn -f ~/Devel/workspace/com.project.contract/ clean install
+mvn -f $HOME/devel/workspace/projects/com.project.contract/ clean install
 
-mvn clean install package -DskipTests -Pprod
+mvn clean install package -DskipTests
 
-scp target/data-alfa.jar devops@94.237.97.137:/var/www/jee_projects/datapool
+scp target/data-alfa.jar webuser@192.168.0.20:/var/www/vantalii/datapool
